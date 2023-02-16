@@ -14,3 +14,5 @@ evtolRoute.post("/register", async(req, res) => {
         res.json(error.message)
     }
 })
+
+export default evtolRoute
