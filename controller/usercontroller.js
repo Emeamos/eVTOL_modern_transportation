@@ -59,7 +59,7 @@ export const userLoginController = async(req, res)=>{
                 firstname: foundUser.firstname,
                 lastname: foundUser.lastname,
                 email: foundUser.email,
-                //token: generateToken(foundUser._id)
+                
 
             },
         });
