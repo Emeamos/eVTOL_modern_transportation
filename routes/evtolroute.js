@@ -1,5 +1,4 @@
 import express from "express";
-import Evtol from "../model/evtolmodel";
 
 const evtolRoute = express.Router();
 
