@@ -1,10 +1,13 @@
 import express from "express";
+import Evtol from "../model/evtolmodel";
+
 
 const evtolRoute = express.Router();
 
 evtolRoute.post("/register", async(req, res) => {
     const {serialNumber, model, weightLimit, batteryCapacity, state} = req.body;
     try {
+        const evtolfound = await Evtol.findOne({serialNumber});
         res.json({
             status: "success",
             data: "you've successfully register an evtol"
