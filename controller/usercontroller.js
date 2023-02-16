@@ -1,7 +1,5 @@
-
 import bcrypt from "bcrypt";
-import express from "express";
-import User from "../../model/usermodel.js";                     
+import User from "../model/usermodel.js";                     
 
 
 
