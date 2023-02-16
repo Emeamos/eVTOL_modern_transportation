@@ -6,7 +6,7 @@ import User from "../../model/usermodel.js";
 
 
 export const userRegisterController = async(req, res)=>{
-    const {firstname, lastname, email, password, gender, } = req.body;
+    const {firstname, lastname, email, password, } = req.body;
     console.log(req.body);
     try {
         const userFound = await User.findOne({email});
@@ -23,7 +23,6 @@ export const userRegisterController = async(req, res)=>{
             lastname,
             email,
             password:passwordhash,
-            gender,
         })
         res.json({
             status:"success",
